@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    background-color: #FFBB64;
+    text-align: center;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+nav{
+    display: inline-block;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+nav ul a{
+    font-size: 20px;
+    color: black;
+}
+
+ul a:hover{
+    font-weight: bolder;
+}
+
+/*carousel*/
+.container-slider {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    padding-right: 100px;
+  }
+
+.slider {
+    text-align: center;
+    display: none;
+}
+.slider img{
+    filter: drop-shadow(4px 5px 3px);
+}
+
+.animasi {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.container-main{
+    flex-grow: 2;
+}
+.container-main h1{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container-food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.container-card{
+    box-shadow: 2px 2px 2px;
+    border-radius: 26px 26px 26px 26px;
+    overflow: hidden;
+}
+
+.container-card .image{
+    background-color: #DCFFB7;
+    height: 60%;
+}
+
+
+.container-card .image img{
+    height: 250px;
+    object-position: 0 -40px;
+}
+
+.deskripsi h2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.deskripsi p{
+    padding:10px;
+}
+
+/*Aside*/
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+aside figure img{
+    margin-left: 40px;
+}
+aside article h2{
+    font-size: 25px;
+}
+
+.container-utama{
+   display: flex;
+}
+
+/*Footer*/
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FFEAA7;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+footer p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+article ul{
+    margin-top: 20px;
+    justify-content: space-around;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px)  {
+    .container-utama{
+        flex-wrap: wrap;
+    }
+
+    aside{
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    aside article p{
+        line-height: 25px;
+    }
+
+    .slider img{
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+    
+}
